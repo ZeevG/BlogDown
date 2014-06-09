@@ -31,6 +31,7 @@ module.exports = (grunt) ->
         files:
           [
             {expand: true, cwd: 'src/fonts/', src: ['**'], dest: 'dist/fonts/', filter: 'isFile'}
+            {expand: true, cwd: 'src/templates/', src: ['*.handlebars'], dest: 'dist/templates/', filter: 'isFile'}
             {expand: true, cwd: 'src/images/', src: ['**'], dest: 'dist/images/'}
             {expand: true, cwd: 'src/css/', src: ['*.css'], dest: 'dist/css/', filter: 'isFile'}
             {expand: true, cwd: 'src/js/vendor/', src: ['*.js'], dest: 'dist/js/vendor/', filter: 'isFile'}

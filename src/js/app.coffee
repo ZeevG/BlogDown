@@ -1,6 +1,6 @@
 $ = require('jquery')
 _ = require('underscore')
-Handlebars = require('handlebars')
+window.Handlebars = Handlebars = require('handlebars')
 
 BASE_URL = "https://api.github.com/users/"
 USER = "ZeevG"
@@ -8,7 +8,7 @@ USER = "ZeevG"
 
 
 $(document).ready ->
-    response = null
+
     $.ajax(BASE_URL+USER+"/gists", 
       success: render
     )
@@ -44,7 +44,7 @@ render = (response) ->
 
     container = $(".post-container")
 
-    rawTemplate = $('#post-item-template').html()
+    rawTemplate = $('#post-list-item').html()
     template = Handlebars.compile(rawTemplate)
 
     console.log "Rendering the following posts"
