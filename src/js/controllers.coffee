@@ -1,3 +1,5 @@
+
+
 class BlogIndexController extends App.Marionette.Controller
 
     show: () ->

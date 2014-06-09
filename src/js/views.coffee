@@ -24,7 +24,24 @@ class ListView extends App.Marionette.CollectionView
 
 class DetailView extends App.Marionette.ItemView
 
+    renderMarkdown: ->
+        marked = require('marked')
+
+        marked.setOptions(
+            renderer: new marked.Renderer(),
+            gfm: true,
+            tables: true,
+            breaks: false,
+            pedantic: false,
+            sanitize: false,
+            smartLists: true,
+            smartypants: false
+        )
+
+        @model.file.renderedContent = marked(@model.file.content)
+
     render: ->
+        @renderMarkdown()
         container = $(".content")
 
         rawTemplate = $('#post-detail').html()

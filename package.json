@@ -26,7 +26,8 @@
       "underscore": "latest",
       "handlebars": "latest",
       "backbone": "latest",
-      "backbone.marionette": "latest"
+      "backbone.marionette": "latest",
+      "marked": "latest"
   },
   "devDependencies": {
       "grunt": "latest",
