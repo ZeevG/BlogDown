@@ -13,7 +13,7 @@
 <body>
     <div class="main">
 
-        <div class="blog-title">TITLE</div>
+        <div class="blog-title"><a href="#">TITLE</a></div>
 
         <div class="content">
             
@@ -29,7 +29,7 @@
 
 <script id="post-list-item" type="text/x-handlebars-template">
     <div class="item" id="{{title}}">
-        <h1><a class="post-title" href="#post/{{id}}">{{title}}</a></h1>
+        <h1 class="heading"><a class="post-title" href="#post/{{id}}">{{title}}</a></h1>
         <p>
             {{description}}
         </p>
@@ -37,7 +37,7 @@
 </script>
 <script id="post-detail" type="text/x-handlebars-template">
     <div class="item" id="{{title}}">
-        <h1>{{title}}</h1>
+        <h1 class="heading">{{title}}</h1>
         <p>
             {{file.content}}
         </p>
