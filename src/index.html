@@ -11,9 +11,9 @@
 
 </head>
 <body>
+    <div class="blog-title"><a href="#">Header/Title Goes Here</a></div>
     <div class="main">
 
-        <div class="blog-title"><a href="#">TITLE</a></div>
 
         <div class="content">
             
@@ -28,18 +28,31 @@
 <script src="js/app.js"></script>
 
 <script id="post-list-item" type="text/x-handlebars-template">
-    <div class="item" id="{{title}}">
-        <h1 class="heading"><a class="post-title" href="#post/{{id}}">{{title}}</a></h1>
+    <article class="item" id="{{title}}">
+        <div class="heading">
+            <h1 class="heading"><a class="post-title" href="#post/{{id}}">{{title}}</a></h1>
+            <p class="post-details">
+                By <a href="{{owner.html_url}}">{{owner.login}}</a>
+                 on {{created_at}}
+            </p>
+        </div>
+        
         <p>
             {{description}}
         </p>
-    </div
+    </article>
 </script>
 <script id="post-detail" type="text/x-handlebars-template">
-    <div class="item" id="{{title}}">
-        <h1 class="heading">{{title}}</h1>
+    <article class="item" id="{{title}}">
+        <div class="heading">
+            <h1 class="heading">{{title}}</h1>
+            <p class="post-details">
+                By <a href="{{owner.html_url}}">{{owner.login}}</a>
+                 on {{created_at}}
+            </p>
+        </div>
             {{{file.renderedContent}}}
-    </div
+    </article>
 </script>
 
 </body>
