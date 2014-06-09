@@ -1,0 +1,50 @@
+{
+  "name": "BlogDown",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "url": ""
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "browserify": {
+    "transform": [ "coffeeify" ]
+  },
+  "main": "Gruntfile.coffee",
+  "engines": {
+      "node": "latest"
+  },
+  "dependencies": {
+      "jquery": "latest",
+      "underscore": "latest",
+      "handlebars": "latest"
+  },
+  "devDependencies": {
+      "grunt": "latest",
+      "grunt-contrib-watch": "latest",
+      "grunt-contrib-coffee": "latest",
+      "grunt-contrib-compass": "latest",
+      "grunt-contrib-concat": "latest",
+      "grunt-contrib-uglify": "latest",
+      "grunt-contrib-cssmin": "latest",
+      "grunt-contrib-clean": "latest",
+      "grunt-contrib-htmlmin": "latest",
+      "grunt-contrib-connect": "latest",
+      "grunt-coffeelint": "latest",
+      "grunt-contrib-copy": "latest",
+      "grunt-preprocess": "latest",
+      "grunt-env": "latest",
+      "grunt-browserify": "latest",
+      "browserify-shim": "latest",
+      "browserify": "latest",
+      "coffeeify": "latest"
+  },
+  "keywords": []
+}
