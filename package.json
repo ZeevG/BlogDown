@@ -24,7 +24,9 @@
   "dependencies": {
       "jquery": "latest",
       "underscore": "latest",
-      "handlebars": "latest"
+      "handlebars": "latest",
+      "backbone": "latest",
+      "backbone.marionette": "latest"
   },
   "devDependencies": {
       "grunt": "latest",

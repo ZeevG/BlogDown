@@ -24,6 +24,9 @@ module.exports = (grunt) ->
       app:        
         files:
           'dist/js/app.js': ['src/js/app.coffee']
+        options:
+          bundleOptions:
+            debug: true
           
     # Copy assets
     copy:
